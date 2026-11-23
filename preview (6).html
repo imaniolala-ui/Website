@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imani's World</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #080b1a;
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        header {
+            background: #10152e;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: #00eaff;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00eaff;
+        }
+
+        /* Welcome section */
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, #10152e, #20245a, #080b1a);
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            color: #00eaff;
+            text-shadow: 0 0 15px #00eaff66;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #d6d9ff;
+            margin-bottom: 30px;
+        }
+
+        button {
+            background: transparent;
+            color: #00eaff;
+            border: 2px solid #00eaff;
+            padding: 13px 30px;
+            border-radius: 30px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #00eaff;
+            color: #080b1a;
+            box-shadow: 0 0 18px #00eaff;
+        }
+
+        /* General sections */
+        section {
+            padding: 75px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #00eaff;
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        .intro {
+            max-width: 700px;
+            margin: auto;
+            color: #d6d9ff;
+            font-size: 18px;
+        }
+
+        /* Cards */
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .card {
+            background: #151b38;
+            border: 1px solid #343c70;
+            border-radius: 15px;
+            padding: 30px;
+            width: 250px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            border-color: #00eaff;
+            box-shadow: 0 0 18px #00eaff33;
+        }
+
+        .card h3 {
+            color: #b000ff;
+            margin-bottom: 12px;
+            font-size: 21px;
+        }
+
+        .card p {
+            color: #d6d9ff;
+        }
+
+        .icon {
+            font-size: 38px;
+            margin-bottom: 12px;
+        }
+
+        /* Dream career */
+        .career {
+            max-width: 650px;
+            margin: auto;
+            background: #151b38;
+            padding: 35px;
+            border-radius: 18px;
+            border: 1px solid #b000ff;
+            box-shadow: 0 0 18px #b000ff22;
+        }
+
+        .career h3 {
+            color: #b000ff;
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background: #10152e;
+            text-align: center;
+            padding: 25px;
+            color: #00eaff;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 6px;
+                display: inline-block;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            section {
+                padding: 55px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h2>IMANI'S WORLD</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#interests">Interests</a>
+            <a href="#career">Dream Career</a>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <div class="hero" id="home">
+        <h1>Hi, I'm Imani!</h1>
+        <p>About Me ✨</p>
+
+        <button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+            ABOUT ME
+        </button>
+    </div>
+
+    <!-- About Me -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p class="intro">
+            Hello! My name is Imani. Welcome to my personal website!
+            This is a little space where I share my interests,
+            favourite activities and dreams for the future.
+        </p>
+
+        <br><br>
+
+        <div class="card-container">
+
+            <div class="card">
+                <div class="icon">👩‍🎓</div>
+                <h3>My Name</h3>
+                <p>Imani</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🏫</div>
+                <h3>My School</h3>
+                <p>MFA</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🏐</div>
+                <h3>Favourite Sport</h3>
+                <p>Volleyball</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Interests -->
+    <section id="interests">
+        <h2>My Interests</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <div class="icon">🍕</div>
+                <h3>Food</h3>
+                <p>I enjoy delicious food and discovering different flavours.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">💰</div>
+                <h3>Money</h3>
+                <p>I value success, financial independence and achieving my goals.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎨</div>
+                <h3>Art</h3>
+                <p>I love creativity, imagination and beautiful designs.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🏐</div>
+                <h3>Volleyball</h3>
+                <p>I enjoy the excitement, teamwork and energy of volleyball.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Dream Career -->
+    <section id="career">
+        <h2>My Dream Career</h2>
+
+        <div class="career">
+            <div class="icon">🏛️</div>
+
+            <h3>Architect</h3>
+
+            <p>
+                My dream is to become an architect.
+                I would love to design beautiful, creative
+                and unique buildings. I hope to turn my
+                imagination into real-life structures!
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Imani's World | Designed with creativity 💜</p>
+    </footer>
+
+    <script>
+        console.log("Welcome to Imani's World!");
+
+        // Smooth scrolling is enabled through CSS and JavaScript.
+    </script>
+
+</body>
+</html>
